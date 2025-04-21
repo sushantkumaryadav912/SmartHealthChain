@@ -1,0 +1,81 @@
+/* Root background */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #C9A4E3, #9F78D0); /* Purple gradient */
+}
+
+/* Sidebar style (if you add one) */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #311B4F, #452A63);
+}
+
+/* Form box */
+.login-box {
+    -fx-background-color: #2E1A47;
+    -fx-background-radius: 12;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 12, 0.3, 0, 4);
+    -fx-max-width: 360px;
+}
+
+/* Title */
+.login-title {
+    -fx-font-size: 28px;
+    -fx-text-fill: #E0D5F5;
+    -fx-font-weight: bold;
+}
+
+/* Fields */
+.login-field {
+    -fx-font-size: 14px;
+    -fx-pref-width: 250;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+    -fx-background-color: white;
+    -fx-border-color: #C0C0C0;
+}
+
+/* Button */
+.login-button {
+    -fx-background-color: #7B5BA6;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #9B76C7;
+}
+
+/* Sidebar buttons */
+.sidebar-button {
+    -fx-background-color: #ffffff33;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+/* Subtle link */
+.login-link {
+    -fx-text-fill: #3E61FF;
+    -fx-font-size: 13px;
+}
+
+/* Upload section */
+.upload-label {
+    -fx-text-fill: #D0C0F0;
+    -fx-font-size: 11px;
+    -fx-padding: 4 0 0 0;
+}
+
+.upload-button {
+    -fx-background-color: #D8CFEA;
+    -fx-font-size: 13px;
+    -fx-padding: 6 20 6 20;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}

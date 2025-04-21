@@ -1,0 +1,33 @@
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #311B4F, #452A63);
+}
+
+.sidebar-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-padding: 8 12 8 12;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-content {
+    -fx-background-color: linear-gradient(to bottom, #C9A4E3, #9F78D0);
+}
+
+.app-title {
+    -fx-font-size: 34px;
+    -fx-fill: #3A2E4F;
+    -fx-font-weight: bold;
+}
+
+.app-subtitle {
+    -fx-font-size: 16px;
+    -fx-fill: #3A2E4F;
+}

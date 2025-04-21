@@ -1,0 +1,83 @@
+.dashboard-root {
+    -fx-background-color: linear-gradient(to right, #C9A4E3, #9F78D0);
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #311B4F, #452A63);
+    -fx-padding: 20;
+}
+
+.sidebar-button {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-padding: 15;
+    -fx-background-radius: 15;
+    -fx-pref-width: 180;
+    -fx-pref-height: 180;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 2);
+}
+
+.dark-card {
+    -fx-background-color: #604476;
+}
+
+.deep-card {
+    -fx-background-color: #3E2C54;
+}
+
+.card-title {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.card-value {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.chart-box {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 15;
+    -fx-alignment: center;
+    -fx-padding: 20;
+}
+
+.chart-placeholder {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+}
+
+.section-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.goals-box {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+}
+
+.goals-title {
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

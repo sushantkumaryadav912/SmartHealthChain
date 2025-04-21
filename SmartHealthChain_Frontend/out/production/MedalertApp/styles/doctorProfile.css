@@ -1,0 +1,60 @@
+/* Sidebar Styles */
+.sidebar {
+    -fx-background-color: #1e1e2f;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+.sidebar-button {
+    -fx-background-color: #2f2f4f;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-pref-width: 180px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #4f4f7a;
+}
+
+/* Profile Background */
+.profile-bg {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 40;
+}
+
+/* Profile Card Style */
+.profile-card {
+    -fx-background-color: #ffffff;
+    -fx-padding: 25;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0.2, 2, 2);
+}
+
+/* Labels in the Profile Card */
+.profile-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #333333;
+}
+
+/* Profile Title */
+.profile-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Custom Color Themes (Optional) */
+.doctor-theme .profile-card {
+    -fx-background-color: #e6f7ff;
+    -fx-border-color: #33b5e5;
+}
+
+.patient-theme .profile-card {
+    -fx-background-color: #fff6e6;
+    -fx-border-color: #ffa500;
+}

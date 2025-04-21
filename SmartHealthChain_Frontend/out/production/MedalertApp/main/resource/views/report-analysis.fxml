@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21.0.6"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="medalert.controllers.ReportAnalysisController"
+            stylesheets="/styles/reportanalysis.css"
+            styleClass="main-content">
+
+    <!-- Sidebar -->
+    <left>
+        <VBox fx:id="sidebar" spacing="20" alignment="TOP_CENTER" prefWidth="180" styleClass="sidebar">
+            <padding>
+                <Insets top="30.0" right="10.0" bottom="30.0" left="10.0"/>
+            </padding>
+            <Button text="👤 Profile" onAction="#onProfileClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Separator/>
+            <Button text="🔐 Login" onAction="#onLoginClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Button text="📊 Dashboard" onAction="#onDashboardClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Button text="🚨 Emergency" onAction="#onEmergencyClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Button text="📋 Report Analysis" onAction="#onReportClicked" maxWidth="150" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+
+    <!-- Main Report Content -->
+    <center>
+        <VBox alignment="CENTER" spacing="30" styleClass="report-content">
+            <Label text="YOUR REPORT IS READY!" styleClass="report-title"/>
+            <Label text="Review your analysis below" styleClass="report-subtitle"/>
+
+            <!-- Report Preview Placeholder -->
+            <HBox alignment="CENTER" styleClass="report-preview-container">
+                <VBox alignment="CENTER" styleClass="report-preview">
+                    <Label text="REPORT PREVIEW" styleClass="preview-title"/>
+                    <TextArea fx:id="previewContent" styleClass="preview-content" editable="false" wrapText="true"/>
+                </VBox>
+            </HBox>
+
+            <Button text="Download Full Report" onAction="#onDownloadClicked" styleClass="download-button"/>
+        </VBox>
+    </center>
+</BorderPane>

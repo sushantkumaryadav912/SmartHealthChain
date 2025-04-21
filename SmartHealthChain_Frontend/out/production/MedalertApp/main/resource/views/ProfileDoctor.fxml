@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="medalert.controllers.ProfileController"
+            stylesheets="/styles/doctorProfile.css" prefWidth="900" prefHeight="600">
+
+    <left>
+        <VBox spacing="20" alignment="TOP_CENTER" prefWidth="200" styleClass="sidebar">
+            <padding><Insets top="30" left="10" right="10" bottom="30"/></padding>
+            <Button text="👨‍⚕️ Doctor Profile" onAction="#onProfileClicked" styleClass="sidebar-button"/>
+            <Button text="🔐 Login" onAction="#onLoginClicked" styleClass="sidebar-button"/>
+            <Button text="📊 Dashboard" onAction="#onDashboardClicked" styleClass="sidebar-button"/>
+            <Button text="🚨 Emergency" onAction="#onEmergencyClicked" styleClass="sidebar-button"/>
+            <Button text="📋 Report" onAction="#onReportClicked" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20" styleClass="profile-bg" padding="40">
+            <Label text="👨‍⚕️ Doctor Profile" styleClass="profile-title"/>
+            <VBox spacing="15" alignment="CENTER_LEFT" styleClass="profile-card" prefWidth="500">
+                <Label fx:id="nameLabel" styleClass="profile-label"/>
+                <Label fx:id="roleLabel" styleClass="profile-label"/>
+                <Label text="Specialization: Cardiologist" styleClass="profile-label"/>
+                <Label text="Experience: 12 Years" styleClass="profile-label"/>
+                <Label text="Phone: +91 9876543210" styleClass="profile-label"/>
+                <Label text="Email: dr.kumar@example.com" styleClass="profile-label"/>
+                <Label text="Hospital: Apollo Hospitals, Chennai" styleClass="profile-label"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

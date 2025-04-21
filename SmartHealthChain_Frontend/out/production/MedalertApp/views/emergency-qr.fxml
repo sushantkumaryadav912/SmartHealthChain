@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21.0.6"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="medalert.controllers.EmergencyQRController"
+            stylesheets="/styles/emergency.css"
+            styleClass="main-content">
+
+    <!-- Sidebar -->
+    <left>
+        <VBox fx:id="sidebar" spacing="20" alignment="TOP_CENTER" prefWidth="180" styleClass="sidebar">
+            <padding>
+                <Insets top="30.0" right="10.0" bottom="30.0" left="10.0"/>
+            </padding>
+            <Button text="👤 Profile" onAction="#onProfileClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Separator/>
+            <Button text="🔐 Login" onAction="#onLoginClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Button text="📊 Dashboard" onAction="#onDashboardClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Button text="🚨 Emergency" onAction="#onEmergencyClicked" maxWidth="150" styleClass="sidebar-button"/>
+            <Button text="📋 Report Analysis" onAction="#onReportClicked" maxWidth="150" styleClass="sidebar-button"/>
+        </VBox>
+    </left>
+
+    <!-- Main QR Content -->
+    <center>
+        <VBox alignment="CENTER" spacing="30" styleClass="qr-content">
+            <Label text="FOR EMERGENCY RESPONSE!" styleClass="emergency-title"/>
+            <Rectangle width="250" height="250" arcWidth="20" arcHeight="20" fill="white" styleClass="qr-placeholder"/>
+            <Label text="Scan QR Code" styleClass="qr-label"/>
+        </VBox>
+    </center>
+
+    <!-- Bottom notification bar -->
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+            </padding>
+            <Label text="In case of emergency, show this QR code to responders."/>
+        </HBox>
+    </bottom>
+</BorderPane>

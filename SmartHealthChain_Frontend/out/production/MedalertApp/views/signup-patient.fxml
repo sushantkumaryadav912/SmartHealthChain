@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="medalert.controllers.SignupPatientController"
+            stylesheets="/styles/signup-patient.css">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="0.0" layoutY="0.0"
+          AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+          AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+
+        <VBox alignment="CENTER" spacing="15" styleClass="login-box">
+
+            <Text text="CREATE YOUR ACCOUNT" styleClass="login-title"/>
+            <TextField fx:id="fullNameField" promptText="Full Name" styleClass="login-field"/>
+            <TextField fx:id="ageField" promptText="Age" styleClass="login-field"/>
+            <TextField fx:id="genderField" promptText="Gender" styleClass="login-field"/>
+            <TextField fx:id="emailField" promptText="Email ID" styleClass="login-field"/>
+            <TextField fx:id="medicalHistoryField" promptText="Medical History" styleClass="login-field"/>
+
+            <!-- Upload PDF section -->
+            <Label text="Upload official medical reports in pdf format(optional) [Max size - 1MB]" styleClass="upload-label"/>
+            <Button fx:id="uploadButton" text="Upload ▼" onAction="#onUploadClicked" styleClass="upload-button"/>
+
+            <Button text="Signup" onAction="#onSignupClicked" styleClass="login-button"/>
+            <Label text="Already have an account? Login" styleClass="login-link" onMouseClicked="#onLoginClicked"/>
+
+        </VBox>
+    </VBox>
+</AnchorPane>

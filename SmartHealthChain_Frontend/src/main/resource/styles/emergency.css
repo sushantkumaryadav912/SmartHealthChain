@@ -1,0 +1,64 @@
+/* Background for main page */
+.main-content {
+    -fx-background-color: linear-gradient(to bottom, #C9A4E3, #9F78D0);
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #311B4F, #452A63);
+}
+
+/* Sidebar Buttons */
+.sidebar-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-padding: 8 12 8 12;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Emergency title - Made larger and more prominent */
+.emergency-title {
+    -fx-font-size: 36px;  /* Increased from 28px */
+    -fx-text-fill: #811120; /* Changed to brighter red */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0.2, 0, 1);
+}
+
+/* QR scan label - Enhanced visibility */
+.qr-label {
+    -fx-font-size: 22px;  /* Increased from 18px */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 15 0 0 0;
+}
+
+/* QR placeholder styling */
+.qr-placeholder {
+    -fx-stroke: #FFFFFF;
+    -fx-stroke-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 15, 0.3, 0, 0);
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+}
+
+/* Bottom bar */
+.notification-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;  /* Slightly larger */
+    -fx-font-weight: bold;
+}
+
+/* QR content center - Better spacing */
+.qr-content {
+    -fx-padding: 30 0 30 0;  /* Adjusted padding */
+    -fx-alignment: center;
+    -fx-spacing: 25;
+}
